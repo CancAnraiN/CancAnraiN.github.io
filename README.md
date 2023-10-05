@@ -1,9 +1,11 @@
 ## Welcome 
 
 Here is literally NOTHING
-###Instagram
+### Instagram
+
 [Link](https://www.instagram.com/kuanyuu_0406/)
-###Linkedin
+### Linkedin
+
 [Link](https://www.linkedin.com/in/%E5%86%A0%E5%AE%87-%E6%9F%AF-ab953a293/)
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
