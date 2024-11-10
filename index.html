@@ -3,39 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOGTEST</title>
+    <title>Gary Ko - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="image-container">
-            <img src="Img/cat.jpg" alt="TRASH">
-            <img src="Img/cat2.JPG" alt="STRANGE">
-            <img src="Img/cat3.jpg" alt="STRANGE">
-            <img src="Img/cat4.jpg" alt="STRANGE">
-            <img src="Img/cat5.jpg" alt="STRANGE">
-        </div>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home">CAN's comfort zone</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="content">
-        <h1>Gary Ko</h1>
-        <p>
-            <span> Master student at NSYSU CSE</span>
-        </p>
-        <p>
-            <span> I am a student at National Sun Yat-sen University, majoring in Computer Science and Engineering. I am interested in image processing and machine learning. </span>
-        </p>
-        <p>
-            <span> Email: garyko0406@gmail.com </span>
-        </p>
-        <p>
-            <span> Links:
-        <div class="quick-links">
-            <a href="https://www.instagram.com/kuanyuu_0406/" target="_blank">Instagram</a>
-            <a href="https://www.linkedin.com/in/%E5%86%A0%E5%AE%87-%E6%9F%AF-ab953a293/" target="_blank">LinkedIn</a>
-            <a href="https://www.instagram.com/87penpen/"target="_blank">My Cat</a>
+
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <div class="banner-text">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Master Student at NSYSU CSE</p>
+                <p>Specializing in Image Processing and Machine Learning</p>
+                <div class="banner-links">
+                    <a href="#about" class="cta-button">Learn More</a>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/kuanyuu_0406/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/%E5%86%A0%E5%AE%87-%E6%9F%AF-ab953a293/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-image">
+                <!-- 您可以在這裡放置個人照片或相關圖片 -->
+                <img src="Img/cat.jpg" alt="Profile Image">
+            </div>
         </div>
-        </span>
-        
-    </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="image-gallery">
+            <img src="Img/cat2.JPG" alt="Cat Photo 2">
+            <img src="Img/cat3.jpg" alt="Cat Photo 3">
+            <img src="Img/cat4.jpg" alt="Cat Photo 4">
+            <img src="Img/cat5.jpg" alt="Cat Photo 5">
+        </div>
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p class="about_me" >I am a passionate Computer Science and Engineering student at National Sun Yat-sen University, focusing on image processing and machine learning. My research interests include computer vision, deep learning, and their applications in real-world scenarios.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="content">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul id="programming-skills"></ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <ul id="ml-skills"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="content">
+            <h2>Projects</h2>
+            <div id="projects-container" class="projects">
+                <!-- Projects will be loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="content">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <p>📧 Email: garyko0406@gmail.com</p>
+                <p>📍 Location: Taipei, Taiwan</p>
+                <p>🏫 Institution: National Sun Yat-sen University</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Gary Ko. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
